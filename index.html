@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Flusi Universe · Chronik</title>
+  <style>
+    :root{
+      --bg:#313036;
+      --muted:#9E9E9E;
+      --brand:#71A8DA;
+      --brand-dark:#444444;
+      --text:#9E9E9E;
+      --line:#71A8DA;
+      --white:#ffffff;
+    }
+
+    *{box-sizing:border-box}
+
+    body{
+      margin:0;
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,Helvetica,Arial,"Apple Color Emoji","Segoe UI Emoji",sans-serif;
+      background:var(--bg);
+      color:var(--text);
+      line-height:1.6;
+    }
+
+    .wrap{max-width:980px;margin:0 auto;padding:48px 20px 80px}
+
+    h1{
+      margin:0 0 28px;
+      font-size:clamp(1.6rem,1rem + 2vw,2.2rem);
+      text-align:center;
+      letter-spacing:.3px;
+      color:var(--brand);
+    }
+
+    .timeline{position:relative;margin-left:28px;padding-left:28px;isolation:isolate}
+
+    .timeline::before{
+      content:"";
+      position:absolute;
+      inset:0 auto 0 0;
+      width:2px;
+      background:repeating-linear-gradient(to bottom,var(--line) 0 10px,rgba(113,168,218,0) 10px 20px);
+      border-radius:2px;
+      opacity:.9;
+    }
+
+    .item{position:relative;margin-bottom:32px;padding-left:14px;transform:translateY(14px);opacity:0;transition:transform .6s ease,opacity .6s ease}
+    .item.is-visible{opacity:1;transform:translateY(0)}
+
+    .item::before{content:"";position:absolute;left:-36px;top:6px;width:16px;height:16px;background:var(--brand);border:3px solid var(--bg);border-radius:50%;box-shadow:0 0 0 2px var(--brand-dark)}
+
+    time{display:block;font-weight:700;color:var(--brand);margin-bottom:22px;font-size:.98rem}
+
+    .title{margin:0 0 6px;font-size:1.12rem;font-weight:700;color:var(--white)}
+
+    .body{margin:0;color:var(--text)}
+
+    .item:hover .title{color:var(--brand)}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Chronik</h1>
+    <div class="timeline" id="timeline">
+      <div class="item"><time>Mai 2025</time><div class="title">Etermin</div><p class="body">Etermin ist ein Online-Terminbuchungssystem, mit dem Support-Anfragen schnell und unkompliziert geplant werden können. Nutzer sehen freie Zeiten, buchen direkt online und erhalten automatische Bestätigungen sowie Erinnerungen.</p></div>
+      <div class="item"><time>April 2025</time><div class="title">3CX im Einsatz bei Flusi Universe</div><p class="body">Bei Flusi Universe nutzen wir die 3CX VoIP-Telefonanlage für eine zuverlässige und moderne Kommunikation. Damit sind wir flexibel erreichbar und können Support, Teamabsprachen und Meetings effizient umsetzen.</p></div>
+      <div class="item"><time>März 2025</time><div class="title">Barrierefreiheitsstärkungsgesetz – Wir bereiten uns vor</div><p class="body">Mit dem BFSG setzt Deutschland die EU-Vorgaben für mehr digitale Barrierefreiheit um. Ab Juni 2025 müssen viele digitale Angebote barrierefrei zugänglich sein.</p></div>
+      <div class="item"><time>Februar 2025</time><div class="title">Start unseres WhatsApp-Community-Kanals</div><p class="body">Ab sofort sind wir auch über unseren WhatsApp-Community-Kanal erreichbar. Erhalte Neuigkeiten, Updates und spannende Inhalte direkt auf dein Smartphone.</p></div>
+      <div class="item"><time>Januar 2025</time><div class="title">Visuelle Verbesserung für mobile Endgeräte</div><p class="body">Das Design wurde bereits für mobile Nutzer optisch angepasst. Die vollständige Responsivität folgt in einem späteren Schritt.</p></div>
+      <div class="item"><time>September 2024</time><div class="title">Unterstützung von MSFS 2024</div><p class="body">Mit dem Release von MSFS 2024 bieten wir nun auch Unterstützung für diesen neuen Simulator auf Flusi‑Universe.de an.</p></div>
+      <div class="item"><time>August 2024</time><div class="title">Weitere Änderungen der Webseite</div><p class="body">Die Webseite hat weitere Änderungen erfahren, um die Effizienz und das Benutzererlebnis zu verbessern.</p></div>
+      <div class="item"><time>November 2023</time><div class="title">Kooperation mit FlightSimAlerts</div><p class="body">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></div>
+      <div class="item"><time>Juli 2023</time><div class="title">Implementierung von eRecht24</div><p class="body">eRecht24 erfolgreich integriert, um Rechtssicherheit und Transparenz zu gewährleisten.</p></div>
+      <div class="item"><time>Mai 2023</time><div class="title">Tiktok Kanal erstellt</div><p class="body">Lorem ipsum dolor sit amet.</p></div>
+      <div class="item"><time>Januar 2023</time><div class="title">SEO‑Optimierung für bessere Sichtbarkeit</div><p class="body">Gezielte Optimierung unserer Inhalte und Struktur für bessere Auffindbarkeit.</p></div>
+      <div class="item"><time>Oktober 2021</time><div class="title">Weitere Änderungen der Webseite</div><p class="body">Optimierungen für ein besseres Benutzererlebnis.</p></div>
+      <div class="item"><time>September 2021</time><div class="title">MSFS 2020 Support</div><p class="body">Support für Microsoft Flight Simulator 2020 für alle Altersgruppen.</p></div>
+      <div class="item"><time>August 2021</time><div class="title">Webseite im Aufbau</div><p class="body">Grundsteine für die Plattform gelegt, kontinuierlicher Ausbau.</p></div>
+      <div class="item"><time>Oktober 2020</time><div class="title">Analyse mehrerer Probleme im MSFS</div><p class="body">Probleme wie Performance, Steuerung, Flugplanung und mehr identifiziert.</p></div>
+      <div class="item"><time>August 2020</time><div class="title">Flight Simulator 2020</div><p class="body">Realistische Flugsimulation mit detaillierter Grafik und Physik.</p></div>
+      <div class="item"><time>Mai 2017</time><div class="title">Prepar3D v4</div><p class="body">Tradition aus Prepar3D v3 fortgeführt, viele Flugzeuge genutzt.</p></div>
+      <div class="item"><time>September 2015</time><div class="title">Prepar3D v3</div><p class="body">Leidenschaft für PMDG 777 und 747‑8 Queen of the Skies II ausgelebt.</p></div>
+      <div class="item"><time>Januar 2006</time><div class="title">Kauf des ersten besseren Flugsimulators</div><p class="body">Mit dem Flight Simulator X Erfahrungen erweitert und größere Flugzeuge geflogen.</p></div>
+    </div>
+  </div>
+
+  <script>
+    const items=document.querySelectorAll('.item');
+    const io=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('is-visible')})},{threshold:.12});
+    items.forEach(el=>io.observe(el));
+  </script>
+</body>
+</html>
